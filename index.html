@@ -3,11 +3,21 @@
     <body style="background-color:#000000">
         <h1 style="color:whitesmoke">Hello World</h1>
         <p style="color:whitesmoke">Ich bin ein Text.</p>
+
+        <section>
+            <p id="demo" style="color:pink">Klick den Button</p>
+            <button type="button" onclick="myFunction()">Try me</button>
+        </section>
         
-        <p id="demo" style="color:pink">Klick den Button</p>
-        <button type="button" onclick="myFunction()">Try me</button>
+
+        <picture onload="myFunction()">
+            <img src="./resources/apod_default.png" alt="Astronomy Picture of the Day">
+            <p style="color:whitesmoke">Das "Astronomy Picture of the Day" vom 19. März 2021 zeigt die "Central Lagoon in Infrared"</p>
+        </picture>
         
    
-        <script src="apod-aktualisieren.js"></script>
+        <script src="apod-aktualisieren.js">
+            onload()
+        </script>
     </body>
 </html>
