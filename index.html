@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <body style="background-color:#000000">
-        <h1 style="color:whitesmoke">Hello World</h1>
-        <p style="color:whitesmoke">Ich bin ein Text.</p>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css" />
+        <title>spaceDASH</title>
+    </head>
+    <body>
+        <main class="main">
+            <h1>NASA's Astronomy Picture of the Day</h1>
+            <h2 id="title"></h2>
+            <p id="date"></p>
 
-        <section>
-            <p id="demo" style="color:pink">Klick den Button</p>
-            <button type="button" onclick="myFunction()">Try me</button>
-        </section>
-        
+            <picture class="apod-container">
+                <img src="" id="apod" alt="Astronomy Picture of the Day der NASA">
+                <p id="apod-bildbeschreibung"></p>
+            </picture>
 
-        <picture onload="myFunction()">
-            <img src="./resources/apod_default.png" alt="Astronomy Picture of the Day">
-            <p style="color:whitesmoke">Das "Astronomy Picture of the Day" vom 19. März 2021 zeigt die "Central Lagoon in Infrared"</p>
-        </picture>
-        
-   
-        <script src="apod-aktualisieren.js">
-            onload()
-        </script>
+        </main>
+        <script type="text/javascript" src="config.js"></script>
+        <script src="apod-aktualisieren.js"></script>
     </body>
 </html>

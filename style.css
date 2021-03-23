@@ -1,0 +1,26 @@
+* {
+    background-color: #090D11;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5E7F9C;
+  }
+  
+  .main {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .apod-container {
+    display: flex;
+  }
+  
+  #apod {
+    width: 50%;
+    margin-right: 1rem;
+  }
+  
+  #apod-bildbeschreibung {
+    letter-spacing: 0px;
+    line-height: 20px;
+  }
