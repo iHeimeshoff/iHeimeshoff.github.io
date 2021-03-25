@@ -3,18 +3,53 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="style.css" />
-        <title>spaceDASH</title>
+        <title>SpaceDASH</title>
     </head>
     <body>
+        <header class="relative">
+            <img src='./resources/banner_dark.jpg' id="banner" alt="Lagunennebel-Bildausschnitt"/>
+            <h1 class="absolute ueberschrift titel-position">SpaceDASH</h1>
+        </header>
         <main class="main">
-            <h1>NASA's Astronomy Picture of the Day</h1>
-            <h2 id="title"></h2>
-            <p id="date"></p>
+            <section class="box-kombination">
+                <div class="box schmal">
+                    <h2 class="ueberschrift">Nächstes Ereignis</h2>
+                    <p>weltweit zu beobachten</p>
+                    <p class="info">Lyriden Meteorschauer</p>
+                    <div class="flex-row">
+                        <img class="icon" src="./resources/date.svg"/>
+                        <p>22.-23. April 2021</p>
+                    </div>
+                </div>
+                <div class="box schmal">
+                    <h2 class="ueberschrift">Wolkenbedeckung</h2>
+                    <p>am 22. März 2021</p>
+                    <div class="flex-row">
+                        <p class="info">4/8</p>
+                        <img class="cloud" src="./resources/cloud4.png"/>
+                    </div>
+                </div>
+            </section>
 
-            <picture class="apod-container">
-                <img src="" id="apod" alt="Astronomy Picture of the Day der NASA">
-                <p id="apod-bildbeschreibung"></p>
-            </picture>
+            <section class="box">
+                <div class="flex-row">
+                    <img class="icon" src="./resources/planets.svg"/>
+                    <h2 class="ueberschrift">NASA's Astronomy Picture of the Day</h1>
+                </div>
+                <img src="./resources/apod_default.png" id="apod" alt="Astronomy Picture of the Day der NASA">
+                <figcaption class="ueberschrift" id="apod-title"></figcaption2>
+                <p id="apod-date"></p>
+                <p id="apod-bildbeschreibung"></p>  
+            </section>
+
+            <section class="box">
+                <div class="flex-row"></div>
+                    <h2 class="ueberschrift">Astroiden Flugnähe zur Erde</h2>
+                    <img class="icon" src="./resources/orbit.svg"/>
+                </div>
+                <p>Der Asteroid <span class="info">2001 FO32</span> ist uns aktuell am nächsten</p>
+                <p></p>
+            </section>
 
         </main>
         <script type="text/javascript" src="config.js"></script>
