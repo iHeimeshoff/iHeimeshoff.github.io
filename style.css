@@ -27,19 +27,18 @@ body{
   background-color: #11171D;
   display: flex;
   flex-direction: column;
-}
-
-.info {
-  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .schmal {
-  width: 45%;
-  margin: 2rem;
+  width: 48%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .box-kombination {
   display: flex;
+  justify-content: space-between;
 }
 
 .icon {
@@ -54,8 +53,9 @@ body{
 }
 
 #apod {
-  width: 100%;
-  margin-right: 1rem;
+  max-height: 30rem;
+  width: auto;
+  object-fit: contain;
 }
   
 #apod-bildbeschreibung {
@@ -63,7 +63,7 @@ body{
   line-height: 20px;
 }
 
-.ueberschrift {
+.ueberschrift-farbe {
   color: #5E7F9C;
 }
 
@@ -73,4 +73,20 @@ body{
   
 .absolute {
   position: absolute;
+}
+
+.font-2 {
+  font-size: 2rem;
+}
+
+.font-2-5 {
+  font-size: 2.5rem;
+}
+
+.font-3 {
+  font-size: 3rem;
+}
+
+.font-4 {
+  font-size: 4rem;
 }
