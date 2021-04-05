@@ -6,63 +6,92 @@
         <title>SpaceDASH</title>
     </head>
     <body>
-        <header class="relative">
-            <img src='./resources/banner_dark.jpg' id="banner" alt="Lagunennebel-Bildausschnitt"/>
+        <header class="relative" id="header">
+            <img class="banner" src='./resources/banner_dark.jpg' id="banner" alt="Lagunennebel-Bildausschnitt"/>
             <h1 class="absolute titel-position ueberschrift-farbe font-2-5">SpaceDASH</h1>
         </header>
         <main class="main">
-            <section class="box-kombination">
-                <div class="box schmal">
-                    <h2 class="ueberschrift-farbe font-2-5">Nächstes Ereignis</h2>
-                    <p>weltweit zu beobachten</p>
-                    <p class="font-2">Lyriden Meteorschauer</p>
-                    <div class="flex-row">
-                        <img class="icon" src="./resources/date.svg"/>
+            <div class="flex-row justify-content-space-between" id="box-kombination">
+                <section class="section-box schmale-box flex-col justify-content-space-between">
+                    <div>
+                        <h2 class="ueberschrift-farbe font-2">Nächstes Ereignis</h2>
+                        <p>weltweit zu beobachten</p>
+                    </div>
+                    <article class="single-info-box wolke-und-ereignis flex-row justify-content-center align-items-center">
+                        <p class="font-2 margin-top-2 margin-bottom-2">Lyriden Meteorschauer</p>
+                    </article>
+                    <article class="flex-row align-items-center">
+                        <img class="icon-tiny margin-right-0-5" src="./resources/datum_2021.png"/>
                         <p>22.-23. April 2021</p>
+                    </article>
+                </section>
+                <section class="section-box schmale-box flex-col justify-content-space-between">
+                    <div>
+                        <h2 class="ueberschrift-farbe font-2">Wolkenbedeckung</h2>
+                        <p>am 04. April 2021</p>
                     </div>
-                </div>
-                <div class="box schmal">
-                    <h2 class="ueberschrift-farbe font-2-5">Wolkenbedeckung</h2>
-                    <p>am 22. März 2021</p>
-                    <div class="flex-row">
+                    <article class="single-info-box wolke-und-ereignis flex-row wrap justify-content-space-evenly align-items-center">
                         <p class="font-2">4/8</p>
-                        <img class="cloud" src="./resources/cloud4.png"/>
-                    </div>
+                        <img class="cloud" src="./resources/cloud_04.png"/>
+                    </article>
+                    <article class="flex-row align-items-center">
+                        <img class="icon-tiny margin-right-0-5" src="./resources/stadt.svg"/>
+                        <p>in Münster, Deutschland</p>
+                    </article>
+                </section>
+            </div>
+
+            <section class="section-box flex-col justify-content-space-between">
+                <div class="flex-row align-items-center margin-bottom-2">
+                    <img class="icon margin-right-2" src="./resources/planeten.svg"/>
+                    <h2 class="ueberschrift-farbe font-2">Astronomie-Bild des Tages</h1>
                 </div>
+                <img class="apod margin-bottom-2" src="./resources/apod_default.png" id="apod" alt="Astronomy Picture of the Day der NASA">
+                <article>
+                    <h3 class="ueberschrift-farbe" id="apod-title">Central Lagoon in Infrared</h3>
+                    <p class="margin-bottom-1">Bild des Tages vom <span id="apod-date">19.03.2021</span></p>
+                    <p class="apod-info margin-bottom-1" id="apod-bildbeschreibung">
+                        Stars fill this infrared view, spanning 4 light-years across the center of the Lagoon Nebula. Visible light images 
+                        show the glowing gas and obscuring dust clouds that dominate the scene. But this infrared image, constructed from 
+                        Hubble Space Telescope data, peers closer to the heart of the active star-forming region revealing newborn stars scattered 
+                        within, against a crowded field of background stars toward the center of our Milky Way galaxy. This tumultuous stellar 
+                        nursery's central regions are sculpted and energized by the massive, young Herschel 36, seen as the bright star near 
+                        center in the field of view. Herschel 36 is actually a multiple system of massive stars. At over 30 times the mass of 
+                        the Sun and less than 1 million years old, the most massive star in the system should live to a stellar old age of 5 
+                        million years. Compare that to the almost 5 billion year old Sun which will evolve into a red giant in only another 5 
+                        billion years or so. The Lagoon Nebula, also known as M8, lies about 4,000 light-years away within the boundaries of 
+                        the constellation Sagittarius.
+                    </p>
+                    <p>
+                        Mehr Infos zum Atronomie-Bild des Tages von der NASA sind zu finden unter:
+                        <a href="https://apod.nasa.gov/apod/astropix.html">www.apod.nasa.gov</a>
+                    </p>
+                </article>
             </section>
 
-            <section class="box">
-                <div class="flex-row">
-                    <img class="icon" src="./resources/planets.svg"/>
-                    <h2 class="ueberschrift-farbe font-2-5">NASA's Astronomy Picture of the Day</h1>
+            <section class="section-box flex-col justify-content-space-between">
+                <div class="flex-row align-items-center margin-bottom-2">
+                    <h2 class="ueberschrift-farbe font-2">Asteroiden Flugnähe zur Erde</h2>
+                    <img class="icon margin-left-2" src="./resources/umlaufbahn.svg"/>
                 </div>
-                <img src="./resources/apod_default.png" id="apod" alt="Astronomy Picture of the Day der NASA">
-                <h3 class="ueberschrift-farbe" id="apod-title"></h3>
-                <p id="apod-date"></p>
-                <p id="apod-bildbeschreibung">Dies ist eine Bildbeschreibung</p>  
-            </section>
-
-            <section class="box">
-                <div class="flex-row"></div>
-                    <h2 class="ueberschrift-farbe font-2-5">Astroiden Flugnähe zur Erde</h2>
-                    <img class="icon" src="./resources/planets.svg"/>
-                </div>
-                <p>Der Asteroid <span class="info">2001 FO32</span> ist uns aktuell am nächsten</p>
-                <div>
-                    <h3 class="ueberschrift-farbe">Tag des Vorbeiflugs</h3>
-                    <p>21. März 2021</p>
-                </div>
-                <div>
-                    <h3 class="ueberschrift-farbe">Größe</h3>
-                    <p>440 bis 660 Meter</p>
-                </div>
-                <div>
-                    <h3 class="ueberschrift-farbe">Abstand zur Erde</h3>
-                    <p>3,8 Mio. km</p>
-                </div>
-                <div>
-                    <h3 class="ueberschrift-farbe">Geschwindigkeit</h3>
-                    <p>124.000 km/h</p>
+                <p class="font-1-5 margin-bottom-1">Der Asteroid <span class="info" id="bezeichnung">2001 FO32</span> ist uns aktuell am nächsten.</p>
+                <div class="flex-row wrap justify-content-center">
+                    <article class="single-info-box asteriod-info margin-right-2 flex-col justify-content-space-evenly">
+                        <h3 class="ueberschrift-farbe">Tag des Vorbeiflugs</h3>
+                        <p id="vorbeiflug_am">21. März 2021</p>
+                    </article>
+                    <article class="single-info-box asteriod-info margin-right-2 flex-col justify-content-space-evenly">
+                        <h3 class="ueberschrift-farbe">Größe</h3>
+                        <p id="groesse">440 bis 660 Meter</p>
+                    </article>
+                    <article class="single-info-box asteriod-info margin-right-2 flex-col justify-content-space-evenly">
+                        <h3 class="ueberschrift-farbe">Abstand zur Erde</h3>
+                        <p id="abstand">3,8 Mio. km</p>
+                    </article>
+                    <article class="single-info-box asteriod-info margin-right-2 flex-col justify-content-space-evenly">
+                        <h3 class="ueberschrift-farbe">Geschwindigkeit</h3>
+                        <p id="geschwindigkeit">124.000 km/h</p>
+                    </article>
                 </div>
             </section>
 

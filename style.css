@@ -1,10 +1,14 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
-  color: #B5C5D3;
+  color: #DFE6E9;
+  overflow-wrap: break-word;
 }
 
 body{
-  background-color: #090D11;
+  background-color: #000A12;
 }
   
 .main {
@@ -13,58 +17,110 @@ body{
 }
 
 .titel-position {
-  left: 0rem;
+  display: flex;
+  align-items: center;
   top: 0rem;
   bottom: 0rem;
   margin-left: 4rem;
+}
+
+.section-box {
+  background-color: #263238;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.schmale-box {
+  width: 48%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.single-info-box {
+  background-color: #3D5059;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+.wolke-und-ereignis {
+  min-height: 14rem;
+}
+
+.asteriod-info {
+  min-width: 20rem;
+  min-height: 8rem;
+  font-size: 1.2rem;
+}
+
+.icon {
+  height: auto;
+  width: 4rem;
+}
+
+.icon-tiny {
+  height: auto;
+  width: 3rem;
+}
+
+.cloud {
+  height: auto;
+  width: 10rem;
+}
+
+.banner {
+  height: 6rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.apod {
+  max-height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+  
+.apod-info {
+  letter-spacing: 0px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.ueberschrift-farbe {
+  color: #D89C1D;
+}
+
+.info {
+  color: #D89C1D;
 }
 
 .flex-row {
   display: flex;
 }
 
-.box {
-  background-color: #11171D;
+.flex-col {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
 }
 
-.schmal {
-  width: 48%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.wrap {
+  flex-wrap: wrap;
 }
 
-.box-kombination {
-  display: flex;
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
   justify-content: space-between;
 }
 
-.icon {
-  height: auto;
-  width: 2rem;
+.justify-content-space-evenly {
+  justify-content: space-evenly;
 }
 
-#banner {
-  height: 6rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-#apod {
-  max-height: 30rem;
-  width: auto;
-  object-fit: contain;
-}
-  
-#apod-bildbeschreibung {
-  letter-spacing: 0px;
-  line-height: 20px;
-}
-
-.ueberschrift-farbe {
-  color: #5E7F9C;
+.align-items-center {
+  align-items: center;
 }
 
 .relative {
@@ -75,6 +131,10 @@ body{
   position: absolute;
 }
 
+.font-1-5 {
+  font-size: 1.5rem;
+}
+
 .font-2 {
   font-size: 2rem;
 }
@@ -83,10 +143,26 @@ body{
   font-size: 2.5rem;
 }
 
-.font-3 {
-  font-size: 3rem;
+.margin-top-2 {
+  margin-top: 2rem;
 }
 
-.font-4 {
-  font-size: 4rem;
+.margin-right-0-5 {
+  margin-right: 0.5rem;
+}
+
+.margin-right-2 {
+  margin-right: 2rem;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.margin-left-2 {
+  margin-left: 2rem;
 }
